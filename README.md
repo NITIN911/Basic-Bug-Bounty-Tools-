@@ -43,4 +43,4 @@ This Script install the basic Bug bounty tools in one go
 14. [MassDNS](https://github.com/blechschmidt/massdns)
     
     
-# ThankYou !!
+
