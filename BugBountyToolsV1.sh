@@ -99,6 +99,26 @@ go install -v github.com/owasp-amass/amass/v4/...@master
 } > /dev/null 2>&1
 echo "${BLUE} Done ${RESET}"
 
+echo "${GREEN} [+] Installing GAU ${RESET}"
+echo ""
+{
+go install github.com/lc/gau/v2/cmd/gau@latest
+} > /dev/null 2>&1
+echo "${BLUE} Done ${RESET}"
+
+echo "${GREEN} [+] Installing Dalfox ${RESET}"
+echo ""
+{
+go install github.com/hahwul/dalfox/v2@latest
+} > /dev/null 2>&1
+echo "${BLUE} Done ${RESET}"
+
+echo "${GREEN} [+] Installing Airixss ${RESET}"
+echo ""
+{
+go install github.com/ferreiraklet/airixss@latest
+} > /dev/null 2>&1
+echo "${BLUE} Done ${RESET}"
 
 echo "${GREEN} [+] Installing SubDomainizer ${RESET}"
 {
@@ -141,6 +161,17 @@ cd ~/tools/MassDNS
 make
 }
 massdns
+} > /dev/null 2>&1
+echo "${BLUE} Done ${RESET}"
+
+echo "${GREEN} [+] Installing Waymore ${RESET}"
+{
+waymore(){
+git clone https://github.com/xnl-h4ck3r/waymore.git ~/tools/Waymore
+cd ~/tools/Waymore
+python3 setup.py install
+}
+waymore
 } > /dev/null 2>&1
 echo "${BLUE} Done ${RESET}"
 
