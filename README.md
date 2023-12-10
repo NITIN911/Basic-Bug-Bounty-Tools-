@@ -25,7 +25,7 @@ This Script install the basic Bug bounty tools in one go
 3. Arjun
 4. Feroxbuster
 5. Waymore
-6. [GAU] https://github.com/lc/gau#installation
+6. [GAU](https://github.com/lc/gau#installation)
 7. Dirsearch
 8. Amass
 9. Dalfox
